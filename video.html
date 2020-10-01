@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Cours 2020 Session C</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="bootstrap.css" media="screen">
+		<link rel="stylesheet" href="custom.css">
+		<script src="jquery.min.js"></script>
+		<script src="popper.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<script>
+			var shiftWindow = function() { scrollBy(0, -100) };
+			window.addEventListener("hashchange", shiftWindow);
+			function load() { if (window.location.hash) shiftWindow(); }
+		</script>
+		<script> 
+			$(function(){
+				$("#navB").load("static/nav.html"); 
+			});
+			
+			$(function(){
+				$("#foot").load("static/footer.html"); 
+			});
+		</script>
+	</head>
+	<body>
+
+		<div id="navB"></div>
+		<section id="title" class="bg-o">
+			<div class="container">
+				<div class="page-header" id="banner">
+					<div class="row vertical-align">
+						<div class="col-lg-12 col-md-5 col-sm-6">
+							<h1>Cours dispensés sur Zoom</h1>
+
+							<table class="table table-striped">
+							  <thead>
+							    <tr>
+							      <th scope="col">Enseignant</th>
+								  <th scope="col">Cours</th>
+								  <th scope="col">Date</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th scope="row">François Lévêque, Flavien Tchapga</th>
+								  <td>Introduction & Organisation</td>
+								  <td>Lundi 25 mai</td>
+								</tr>
+								
+								<tr>
+									<th scope="row">Sébastien DOUGUET</th>
+									<td>La tarification des réseaux (focus structure de tarif de transport) [<a href="videos/2.mp4">1</a>],[<a href="videos/3.mp4">2</a>]</td>
+									<td>Lundi 25 mai</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Vincent RIOUS</th>
+									<td>La régulation des réseaux et de la vente d'électricité (niveau de tarif) [<a href="videos/4.mp4">1</a>],[<a href="videos/5.mp4">2</a>]</td>
+									<td>Mardi 26 mai</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Antoine DEREUDDRE</th>
+									<td>La régulation et la tarification des réseaux d'électricité. Le cas de la France [<a href="videos/6.mp4">1</a>],[<a href="videos/7.mp4">2</a>]</td>
+									<td>Mercredi 27 mai</td>
+								</tr>
+
+								<tr>
+									<th scope="row">François Lévêque, Flavien Tchapga, Saguan Marcelo</th>
+									<td>Séances Q&A et mémoire  [<a href="videos/8.mp4">1</a>], [<a href="videos/9.mp4">2</a>]</td>
+									<td>Mercredi 27 mai</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Yannick PEREZ </th>
+									<td>Subventions et tarifs sociaux [<a href="videos/10.mp4">1</a>], [<a href="videos/11.mp4">2</a>]</td>
+									<td>Jeudi 28 mai</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Flavien TCHAPGA </th>
+									<td>Tarif d'électricité et développement économique</td>
+									<td>Vendredi 29 mai</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Yannick PEREZ </th>
+									<td>Contraintes environnementales et développement des EnR [<a href="videos/12.mp4">1</a>]</td>
+									<td>Mardi 2 juin</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Ahmed OUSMAN ABANI </th>
+									<td>Economie et régulation des programmes d'électrification [<a href="videos/13.mp4">1</a>]</td>
+									<td>Mercredi 3 juin</td>
+								</tr>
+								
+								<tr>
+									<th scope="row">Anastassios GENTZOGLANIS </th>
+									<td>Sources et mécanismes de financement / Financement d'infrastructures [<a href="videos/14.mp4">1</a>], [<a href="videos/15.mp4">2</a>]</td>
+									<td>Jeudi 4 juin</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Boris MARTOR </th>
+									<td>Modalités de structuration et financement des projets énergie en Afrique [<a href="videos/16.mp4">1</a>]</td>
+									<td>Vendredi 5 juin</td>
+								</tr>
+
+							  </tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="footer" class="bg-primary">
+			<div id="foot"></div>
+		</section>
+	<script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    
+	</body>
+</html>

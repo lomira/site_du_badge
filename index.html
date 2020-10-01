@@ -7,22 +7,27 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" href="bootstrap.css" media="screen">
 		<link rel="stylesheet" href="custom.css">
-	</head>
-	
-	<body>
+		<script src="jquery.min.js"></script>
+		<script src="popper.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<script>
+			var shiftWindow = function() { scrollBy(0, -100) };
+			window.addEventListener("hashchange", shiftWindow);
+			function load() { if (window.location.hash) shiftWindow(); }
+		</script>
 
-    	<script type="text/javascript">
-			document.addEventListener("DOMContentLoaded", function(event) { 
-				$(function(){
-					$("#nav-placeholder").load("nav.html");
-				});
+		<script> 
+			$(function(){
+				$("#navB").load("static/nav.html"); 
+			});
+			
+			$(function(){
+				$("#foot").load("static/footer.html"); 
 			});
 		</script>
-		<div id="nav-placeholder">
-
-		</div>
-			
-		
+	</head>
+	<body>
+		<div id="navB"></div>
 		<section id="title" class="bg-o">
 			<div class="container">
 				<div class="page-header" id="banner">
@@ -34,7 +39,7 @@
 						</div>
 						<div class="col-lg-6 col-md-5 col-sm-6">
 							<div class="sponsor">
-									<img src="img/FormDipl.png"  alt="Paris"/>
+									<img src="img/FormDipl.png" class="w-80" alt="Paris"/>
 							</div>
 						</div>
 					</div>
@@ -84,18 +89,18 @@
 					</div>
 				</div>
 				<div class="row vertical-align">
-					<div class="col-lg-4 col-xs-12">
+					<div class="col-4">
 						<div class="bs-component">
 							<p class="lead">En s'alliant l'<a href="http://www.mines-paristech.fr/Formation/Formation-continue/BADGE/">École des Mines de Paris</a> et <a href="https://www2.deloitte.com/fr/fr/pages/fusions-acquisitions/articles/economic-advisory.html">Deloitte</a> vous proposent une formation de grande qualité</p>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-4">
 						<div class="bs-component"><a href="http://www.mines-paristech.fr/Formation/Formation-continue/BADGE/">
 							<img src="img/mines_new.png"  class="d-none d-lg-block" alt="Logo des mines de Paris" />
 						</a>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-4">
 						<div class="bs-component"><a href="https://www2.deloitte.com/fr/fr/pages/fusions-acquisitions/articles/economic-advisory.html">
 							<img src="img/deloitte.png" class="d-none d-lg-block" alt="Logo de Deloitte" /></a>
 						</div>
@@ -172,6 +177,7 @@
 
   </div>
   <!-- Grid row -->
+
 </section>
 
 
@@ -280,181 +286,12 @@
 						</p>
 					</div>
 				</div>
-				<div class="collapse" id="EquipeComplet">
-					<div class="row">
-						<div class="col-lg-6">
-							<img src="img/VR.png"  class="mt-1 ml-2 d-inline-block rounded float-right" alt="SD" />
-							<h3>Vincent Rious</h3>
-							<p>
-								<b>Ingénieur Supélec et docteur en sciences économiques</b>
-							</p>
-							<p>	Expert des marchés de l'énergie, Economiste Expert, RTE <br />
-								Conseiller en ingénierie à la chaire de politique énergétique européenne Loyola de Palacio
-							</p> 
-						</div>
-						<div class="col-lg-6">
-							<img src="img/EB.png" class="mt-1 mr-2 d-inline-block rounded float-left" alt="AG"/>
-							<h3>Ernesto Bonafé</h3>
-							<p>
-								<b>Docteur en droit; spécialiste du droit de l'énergie</b>
-							</p>
-							<p>Trade expert<br /> Energy Charter                                          
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-6">
-								<img src="img/LH.png"  class="mt-1 ml-2 d-inline-block rounded float-right" alt="SD" />
-								<h3>Leïla Hubeaut</h3>
-								<p>
-									<b>Avocate spécialisée</b>
-								</p>
-								<p>	Avocate spécialisée dans le conseil en matière de développement de projets, fusions-acquisitions et joint-ventures dans les mines, l'électricité <br />
-									Herbert Smith Freehills, Paris
-								</p> 
-						</div>
-						<div class="col-lg-6">
-							<img src="img/MC.png" class="mt-1 mr-2 d-inline-block rounded float-left" alt="AG"/>
-							<h3>Marcelo Sagan</h3>
-							<p>
-								<b>Ingénieur Supélec et docteur en sciences économiques</b>
-							</p>
-							<p>	Expert en fonctionnement des marchés de l’électricité et du gaz <br />
-								Ingénieur de recherche chez EDF
-							</p>
-						</div>
-					</div>
-					
-
-					<div class="row">
-						<div class="col-lg-6">
-								<img src="img/FT.png"  class="mt-1 ml-2 d-inline-block rounded float-right" alt="SD" />
-								<h3>Flavien Tchapga</h3>
-								<p>
-									<b>Docteur en sciences économiques</b>
-								</p>
-								<p>	Professeur Associé et consultant spécialisé dans l’économie industrielle et les réformes des secteurs électriques
-								</p> 
-						</div>
-						<div class="col-lg-6">
-								<img src="img/SDo.png" class="mt-1 mr-2 d-inline-block rounded float-left" alt="AG"/>
-								<h3>Sébastien Douguet</h3>
-								<p>
-									<b>Ingénieur Diplômé de MINES ParisTech</b>
-								</p>
-								<p>	
-									Consultant Deloitte Economic Advisory spécialisé dans les marchés de l’énergie
-								</p>
-						</div>
-					</div>
-					<h2>Les intervenants de la Commission de Régulation de l’Energie (CRE) en France</h2>
-
-					<div class="row">
-						<div class="col-lg-4">
-								<h3>Antoine DEREUDDRE</h3>
-								<p>
-									<b>Diplômé de l'Ecole Nationale de la Statistique et de l’Administration Economique</b>
-								</p>
-								<p> Chargé de mission au sein du département Transport d’électricité (Direction des Réseaux)
-								</p> 
-						</div>
-						<div class="col-lg-4">
-								<h3>Coline DUBOURG</h3>
-								<p>
-									<b>Diplômée de l'Ecole Nationale Supérieure des Mines de Paris</b>
-								</p>
-								<p>	
-									Chargée de mission au sein du département Tarification et Concurrence (Direction du développement des marchés et de la transition énergétique)
-								</p>
-						</div>
-						<div class="col-lg-4">
-								<h3>Julien VINCEROT</h3>
-								<p>
-									<b>Diplômé de l'Ecole Supérieure de Commerce de Rouen avec une spécialisation en finance</b>
-								</p>
-								<p>
-									Chef du département Affaires financières
-								</p> 
-						</div>
-					</div><
-
-					<div class="row">
-						<div class="col-lg-4">
-								<h3>Adrien THIRION</h3>
-								<p>
-									<b>Diplômé de l'Ecole Nationale Supérieure des Mines de Paris</b>
-								</p>
-								<p> 
-									Chef du département Dispositifs de soutien aux énergies renouvelables et aux consommateurs (Direction du développement des marchés et de la transition énergétique)
-								</p> 
-						</div>
-						<div class="col-lg-4">
-								<h3>Jean Baptiste BOYER</h3>
-								<p>
-									<b>Diplômé de l'Ecole Nationale Supérieure de Rennes et docteur en mathématiques</b>
-								</p>
-								<p>	
-									Chargé de mission au sein du département Tarification et Concurrence (Direction du développement des marchés et de la transition énergétique)
-								</p>
-						</div>
-						<div class="col-lg-4">
-								<h3>Benoît ESNAULT</h3>
-								<p>
-									<b>Docteur en économie</b>
-								</p>
-								<p>
-									Chef du département interconnexions et affaires européennes à la Commission de Régulation de l'Energie. Il est fortement impliqué dans les actions de coopération de la CRE
-								</p> 
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-lg-3">
-								<h3>Charles VERHAEGHE</h3>
-								<p>
-									<b>Diplômé de l’école nationale des ponts et chaussées</b>
-								</p>
-								<p> 
-									Chef du département transport d'électricité
-								</p> 
-						</div>
-						<div class="col-lg-3">
-								<h3>Andy CONTESSO </h3>
-								<p>
-									<b>Master Contentieux Public et Droit de l'environnement</b>
-								</p>
-								<p>	
-									Chef du département Contentieux, Direction juridique
-								</p>
-						</div>
-						<div class="col-lg-3">
-								<h3>Basile NICOLSKY</h3>
-								<p>
-									<b>Diplômé de Grenoble INP - Ense³, Titulaire du Master 2 Techniques, Sciences et Décisions </b>
-								</p>
-								<p>
-									Chargé de mission
-								</p> 
-						</div>
-						<div class="col-lg-3">
-								<h3>Thomas OILI </h3>
-								<p>
-									<b>Diplômé de Grenoble INP, Master Techniques, Sciences et Décisions</b>
-								</p>
-								<p>
-									Chargé de mission à la direction des affaires financières et de la surveillance des marchés de gros
-								</p> 
-						</div>
-					</div>
-
-
-				</div>
 				
 				<div class="row">
 					<div class="col-lg-12">
 						<h4>
-							<a class="btn btn-primary" data-toggle="collapse" href="#EquipeComplet" role="button" aria-expanded="false" aria-controls="collapseExample">
-								Voir toute l'équipe pédagogique
+							<a class="btn btn-primary" role="button" href="doc/Plaquette.pdf">
+								Accéder à la plaquette pour voir toute l'équipe
 						</a>
 						</h4>
 					</div>
@@ -639,8 +476,8 @@
 				<div class="col-md-3">
 					<div class="card h-100 text-white bg-warning ">
 						<div class="card-body vertical-align">
-							<h5 class="card-text">Session 3 : <br />Module Pratique
-							<br /><em>Paris, Ecole des mines</em></h5>
+							<h5 class="card-text">Session 3 : <br />Module Pratique 1
+							<br /><em>A Distance</em></h5>
 						</div>
 					</div>
 				</div>
@@ -662,9 +499,19 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-md-3">
+					<div class="card h-100 text-white bg-danger ">
+						<div class="card-body vertical-align">
+							<h5 class="card-text">Session 4 : <br />Module Pratique 2
+							<br /><em>Paris, Ecole des mines</em></h5>
+						</div>
+					</div>
+				</div>	
 
 				<div class="col-md">
-					<div class="card h-100 border-warning ">
+					<div class="card h-100 border-danger ">
 						<div class="card-body">
 							<h5 class="card-title">Articulation de la régulation avec les politiques publiques et l'intégration régionale</h5>
 
@@ -681,7 +528,7 @@
 				</div>
 
 				<div class="col-md">
-					<div class="card h-100 border-warning ">
+					<div class="card h-100 border-danger ">
 						<div class="card-body">
 							<h5 class="card-title">Régulation et financement dans le secteur électrique</h5>
 
@@ -746,26 +593,30 @@
 			<div class="bs-docs-section">
 				<div class="row mt-5">
 					<div class="col-lg-12">
+						<h1 id="Presse">Dans la presse</h1>
+						<video width="320" height="240" controls>
+							<source src="badge_2019.mp4" type="video/mp4">
+						  	Votre navigateur ne supporte pas ce type de vidéo.
+						  </video>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section id="Inscription" class="bg-o">
+			<div class="container">
+			<div class="bs-docs-section">
+				<div class="row mt-5">
+					<div class="col-lg-12">
 						<h1 id="Inscription">Inscription</h1>
-						<button type="button" onclick="location.href='doc/Formulaire_candidature.pdf'" class="btn btn-primary btn-lg btn-block p-5">Acceder aux conditions d'accès et formulaire d'inscription</button>
+						<button type="button" onclick="location.href='doc/Formulaire_candidature.pdf'" class="btn btn-primary btn-lg btn-block p-5">Accéder aux conditions d'accès et formulaire d'inscription</button>
 					</div>
 				</div>
 			</div>
 		</div>	
 		</section>
 		<section id="footer" class="bg-primary">
-				<div class="container">
-				<div class="bs-docs-section">
-					<div class="row mt-5">
-							<div class="col-lg-12 mt-5 mb-5 text-center">
-									© 2018 ASSOCIATION POUR LA FORMATION DANS LA REGULATION DES INDUSTRIES DE RESEAU
-									</div>
-					</div>
-				</div>
-			</div>	
+				<div id="foot"></div>
 		</section>
-	<script src="jquery.min.js"></script>
-    <script src="popper.min.js" ></script>
-    <script src="bootstrap.min.js" ></script>
+
 	</body>
 </html>
